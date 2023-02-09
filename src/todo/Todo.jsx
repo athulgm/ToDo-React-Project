@@ -37,13 +37,14 @@ function ToDoApp() {
     <>
       <div className="main-container">
         <h1>To-Do List</h1>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Add short tasks and press the button</p>
         <div className="inputfield">
           <input
             type="text"
             required
             value={input}
-            maxLength={60}
-            placeholder="Enter task"
+            maxLength={25}
+            placeholder="Enter the task"
             onChange={(event) => setInput(event.target.value)}
           />
           {editIndex === -1 ? (
@@ -93,7 +94,7 @@ function ToDoApp() {
                 stroke-width="1.5"
                 stroke="currentColor"
                 class="w-6 h-6"
-                >
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
